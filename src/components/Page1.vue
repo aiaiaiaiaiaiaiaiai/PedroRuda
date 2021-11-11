@@ -1,11 +1,5 @@
 <template>
     <div class="teste ">
-        <img src="../assets/squareFrame.png" alt="Square image">
+        <img style="height: 100vh" src="../assets/squareFrame.png" alt="Square image">
     </div>
 </template>
-
-<style>
-    img {
-        height: 100%;
-    }
-</style>

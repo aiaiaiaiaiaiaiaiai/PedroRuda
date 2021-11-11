@@ -61,7 +61,7 @@ export default {
   }
   .carousel__item {
     top: 0;
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
     background-color: black;
     color:  var(--vc-clr-white);
@@ -73,13 +73,21 @@ export default {
   }
 
   .carousel__slide {
+    background: black;
+    display: inline;
+    height: auto;
   }
 
-  .carousel__prev,
+  .carousel__prev {
+    margin-left: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    position: fixed;
+  }
+
   .carousel__next {
-    /* box-sizing: content-box;
-    border: 5px solid white; */
-    background: black;
+    margin-right: 20px;
+    background-color:rgba(0, 0, 0, 0);;
+    position: fixed;
   }
 
 
