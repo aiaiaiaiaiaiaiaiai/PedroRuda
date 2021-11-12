@@ -44,6 +44,7 @@ export default {
   methods: {
     playSound() {
       sound.play();
+      sound.loop = true;
     },
   },
   created() {
