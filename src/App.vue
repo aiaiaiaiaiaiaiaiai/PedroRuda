@@ -26,6 +26,8 @@ import Page6 from './components/Page6.vue'
 
 import 'vue3-carousel/dist/carousel.css';
 
+var sound = new Audio('/sound.mp3');
+
 export default {
   name: 'App',
   components: {
@@ -38,6 +40,14 @@ export default {
     Page4,
     Page5,
     Page6
+  },
+  methods: {
+    playSound() {
+      sound.play();
+    },
+  },
+  created() {
+    this.playSound();
   },
   data() {
     return {
