@@ -1,5 +1,5 @@
 <template>
-   <Carousel :items-to-show="1" :wrap-around="true">
+   <Carousel :items-to-show="1" :wrap-around="false"  @click="playSound">
     <Slide v-for="component in componentNames" v-bind:is="component" :key="component">
       <div class="carousel__item">
         <component v-bind:is="component"></component>
