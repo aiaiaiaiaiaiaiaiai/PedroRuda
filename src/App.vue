@@ -26,7 +26,7 @@ import Page6 from './components/Page6.vue'
 
 import 'vue3-carousel/dist/carousel.css';
 
-var sound = new Audio('/sound.mp3');
+var sound = new Audio('/voz.mp3');
 
 export default {
   name: 'App',
@@ -47,9 +47,7 @@ export default {
       sound.loop = true;
     },
   },
-  created() {
-    this.playSound();
-  },
+
   data() {
     return {
       componentNames: ['Page1', 'Page2', 'Page3', 'Page4', 'Page5', 'Page6']
@@ -60,8 +58,9 @@ export default {
 
 <style>
   * {
-    border: 0px;
-    padding: 0px;
+    border: 0;
+    padding: 0;
+    margin: 0;
   }
   #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -72,21 +71,21 @@ export default {
   }
   .carousel__item {
     top: 0;
-    /* height: 100vh; */
     width: 100%;
-    background-color: black;
     color:  var(--vc-clr-white);
     font-size: 20px;
     border-radius: 8px;
-    display: flex;
     justify-content: center;
     align-items: center;
+    background-color: orange;
   }
 
   .carousel__slide {
-    background: black;
+    /*
+    background: white;
+    */
     display: inline;
-    height: auto;
+    height: 100%;
   }
 
   .carousel__prev {
