@@ -13,15 +13,24 @@
 </template>
 
 <style>
+    @keyframes scratchanim {
+        0%   {left:0%; top:0;}
+        100% {left:100%; top:0;}
+    }
     .fundo1{    
         background: green;
     }
-    .scratch{
+
+.scratch {
         position: absolute;
-        animation: left-to-right 5s linear forwards;
+        animation-name: scratchanim;
+        animation-duration: 5s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
         z-index: 99;
         top: 35%;
-    }
+}
     .fundo2.img{
         height: 100%
     }
